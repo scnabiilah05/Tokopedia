@@ -401,13 +401,20 @@ form{
     }
 
     .box-search{
-        width: 50%;
+        width: 40%;
     }
 
     .button-header{
-        width: 15%;
+        width: 30%;
     }
     /* content */
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+
+    }
+    
     .detail-content p{
         font-size: 10px;
         color: #212121;
@@ -472,14 +479,5 @@ form{
         height: 15px;
     }
 
-    .contenty{
-        width: 16%;
-        /* border: solid 1px grey; */
-        gap: 5px;
-        transition: transform 0.3s ease;
-        border-radius: 15px;
-        box-shadow: 1px 1px 1px 0.5px lightgray ;
-        margin: 3px 3px 3px 3px;
-        box-sizing: inherit;
-    }
+
 }
