@@ -4,7 +4,9 @@
     box-sizing: inherit;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+body{
+    width: 100%;
+}
 .container-header{
     width: 100%;
     min-height: 50px;
@@ -256,7 +258,7 @@ form{
 
 /* CONTENT LIST ITEMS */
 .container-content{
-    width: auto;
+    width: 100%;
 }
 
 .wrapper-content{
@@ -265,7 +267,7 @@ form{
     /* justify-content: space-around; */
     /* gap: 10px; */
     height: 50px;
-    width: auto;
+    /* width: auto; */
     margin:auto;
     gap: 10px;
 }
@@ -401,7 +403,7 @@ form{
     }
 
     .box-search{
-        width: 35%;
+        width: 50%;
         /* height: 15%; */
     }
 
@@ -417,8 +419,8 @@ form{
     .content{
         display: flex;
         flex-direction: column;
-        width: max-content;
-        /* align-items: center; */
+        align-items: center;
+        width: fit-content;
         gap: 30px;
     }
     .content1{
