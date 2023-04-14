@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: inherit;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -22,7 +23,7 @@
     text-transform: capitalize;
     padding: 5px 0px 0px 0px;
     font-weight: lighter;
-    position: relative;
+    /* position: relative; */
 }
 
 .top-navbar ul a{
@@ -56,6 +57,7 @@
     font-size: 13px;
 }
 
+
 /* MIDDLE HEADER */
 .middle-header{
     display: flex;
@@ -64,7 +66,7 @@
     height: 50px;
     width: 93%;
     margin:auto;
-    position: relative;
+    position: sticky;
 }
 .logo{
     width: 15%;
@@ -226,7 +228,7 @@ form{
 /* TOKOPEDIA PRODUCT DETAIL */ 
   /* header */
 .container-content{
-    padding-top: 98px;
+    padding-top: 60px;
     width: 100%;
 
 }
@@ -254,7 +256,7 @@ form{
 /* product */
 .product-details{
     display: grid;
-    grid-template-columns: minmax(400px, 300px) minmax(400px, 480px) minmax(300px, 300px);
+    grid-template-columns: minmax(400px, 300px) minmax(400px, 480px) minmax(300px, 200px);
     width: auto;
     /* justify-content: center; */
     padding: 25px 10px 10px 30px;
@@ -511,7 +513,7 @@ form{
     flex-direction: column;
     gap: 10px;
     position: fixed;
-    left: 70%;
+    left: 75%;
     background-color: white;
     /* position: fixed; */
 
@@ -672,6 +674,91 @@ input.qtyminus {
 }
 .whishlist i{
     font-size: 12px;
+}
+
+@media screen and (max-width: 600px){
+    /* top header */
+    .top-header, .logo-kategori, .bottom-header, .gap-left-bottom, .keranjang, .wrapper-content>h3{
+        display: none;
+    }
+    .middle-header{
+        gap: 8px;
+        width: fit-content;
+        position: inherit;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 3px 3px 3px;
+    }
+    .middle-header .logo{
+        width: 15%;
+        height: 15%;
+        display: flex;
+        align-content: center;
+    }
+    .container-header{
+        width: 100%;
+        position: static;
+    }
+    .box-search{
+        display: flex;
+        text-align: left;
+        width: 85%;
+        height: 40%;
+    }
+    .button-header{
+        width: 30%;
+    }
+    /* content */
+    .wrapper-content{
+        display: flex;
+        flex-direction: column;
+        top: 15%;
+    }
+
+    .product-details{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    .content-header-list{
+        display: none;
+    }
+    .descriptions{
+        width: auto;
+        padding: 20px 30px 20px 30px;
+    }
+    .flying-box{
+        width: auto;
+        /* padding: 10px 10px 10px 30px; */
+        /* gap: 10px; */
+        background-color: white;
+        position: inherit;
+        display: flex;
+        align-content: flex-start;
+    }
+
+    .box-order{
+        border:1px solid #c9c5c5;
+        padding: 10px 10px 10px 10px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        /* gap: 30px; */
+        height: 250px;
+        box-shadow: 0.5px 0.8px 0.8px 0.5px grey;
+    }
+
+    .total-kuantitas{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .tab, .kuantitas{
+        display: none;
+    }
 }
 
  
