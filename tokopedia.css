@@ -398,10 +398,12 @@ form{
 
 @media screen and (max-width: 600px){
     /* top header */
-    .top-header, .logo-kategori, .bottom-header, .gap-left-bottom, .logo-keranjang, .wrapper-content>h3{
+    .top-header, .logo-kategori, .bottom-header, .gap-left-bottom, .keranjang, .wrapper-content>h3{
         display: none;
     }
-
+    .middle-header{
+        gap: 10px;
+    }
     .box-search{
         width: 50%;
         /* height: 15%; */
@@ -422,11 +424,12 @@ form{
         align-items: center;
         width: fit-content;
         gap: 30px;
+        margin-top: 20px;
     }
     .content1{
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 85%;
         /* border: solid 1px grey; */
         gap: 5px;
         transition: transform 0.3s ease;
