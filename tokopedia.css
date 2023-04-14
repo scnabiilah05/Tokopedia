@@ -256,7 +256,7 @@ form{
 
 /* CONTENT LIST ITEMS */
 .container-content{
-    width: 100%;
+    width: auto;
 }
 
 .wrapper-content{
@@ -265,7 +265,7 @@ form{
     /* justify-content: space-around; */
     /* gap: 10px; */
     height: 50px;
-    width: 93%;
+    width: auto;
     margin:auto;
     gap: 10px;
 }
@@ -396,23 +396,41 @@ form{
 
 @media screen and (max-width: 600px){
     /* top header */
-    .top-header, .logo-kategori, .bottom-header, .gap-left-bottom, .logo-keranjang{
+    .top-header, .logo-kategori, .bottom-header, .gap-left-bottom, .logo-keranjang, .wrapper-content>h3{
         display: none;
     }
 
     .box-search{
-        width: 40%;
+        width: 35%;
+        /* height: 15%; */
     }
 
     .button-header{
         width: 30%;
     }
     /* content */
+
+    .wrapper-content{
+        display: flex;
+        flex-direction: column;
+    }
     .content{
         display: flex;
         flex-direction: column;
         width: max-content;
-
+        /* align-items: center; */
+        gap: 30px;
+    }
+    .content1{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        /* border: solid 1px grey; */
+        gap: 5px;
+        transition: transform 0.3s ease;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px 0.5px lightgray ;
+        margin: 3px 3px 3px 3px;
     }
     
     .detail-content p{
