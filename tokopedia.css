@@ -1,0 +1,376 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-header{
+    width: 100%;
+}
+
+.wrapper-header{
+    width: 100%;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px lightgray ;
+}
+/* TOP-HEADER */
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3f4f5;
+    text-transform: capitalize;
+    padding: 5px 0px 0px 0px;
+    font-weight: lighter;
+}
+
+.top-navbar ul a{
+    text-decoration: none;
+    color: #808080;
+    font-size: 13px;
+}
+
+.download{
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    margin-left: 35px;
+}
+
+.download img{
+    color: grey;
+    height: 20px;
+}
+
+.top-navbar{
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    margin-right: 30px;
+}
+
+.top-navbar li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 13px;
+}
+
+/* MIDDLE HEADER */
+.middle-header{
+    display: flex;
+    /* justify-content: space-around; */
+    /* gap: 10px; */
+    height: 50px;
+    width: 93%;
+    margin:auto;
+}
+.logo{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    /* align-content: flex-start; */
+}
+.logo img{
+    display: flex;
+    width: 100%;
+}
+.logo-kategori{
+    width: 8%;
+    display: flex;
+    /* margin-right: 100px; */
+    align-items: center;
+    text-align: center;
+}
+
+.logo-kategori button{
+    width: 100%;
+    color: grey;
+    font-size: 12px;
+    font-weight: lighter;
+    cursor: pointer;
+    border: none;
+}
+
+form{
+    width: 60%;
+    height: 30px;
+    display: flex;
+    border: 1px solid #c9c5c5;
+    border-radius: 10px;
+    align-items: center;
+
+}
+.box-search i {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+
+.box-search {
+    width: 100%;
+    margin: 5px;
+}
+
+.search-bar {
+    width: 90%;
+    text-align: start;
+    margin-left: 30px;
+    border: none;
+}
+/* .box-search{
+    display: flex;
+    width: 55%;
+    align-items: center;
+
+}
+.search-bar{
+    width: 100%;
+    height: 15px;
+    display: flex;
+
+    border: 1px solid #c9c5c5;
+    border-radius: 10px;
+    align-items: center;
+    gap: 15px;
+    padding: 8px;
+}
+
+.search-bar img{
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar input{
+    border: none;
+} */
+.keranjang{
+    display: flex;
+    justify-content: center;
+    width: 5%;
+    align-items: center;
+}
+
+.logo-keranjang img{
+    width: 20px;
+    height: 20px;
+}
+
+.button-header{
+    width: 15%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button-header .masuk{
+    width: 50%;
+    height: 30px;
+    border: 0.1px solid #03ac0e;
+    border-radius: 8px;
+    font-weight: bold; 
+    color: #03ac0e; 
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.button-header .daftar{
+    width: 50%;
+    height: 30px;
+    border: 0.1px solid #03ac0e;
+    border-radius: 8px;
+    font-weight: bold; 
+    background-color: #03ac0e; 
+    color: #ffff;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+/* BOTTOM HEADER */
+.bottom-header{
+    display: flex;
+    height: 25px;
+    width: 98%;
+    margin:auto;
+    align-items: center;
+}
+
+.gap-left-bottom{
+    width: 24%;
+}
+
+.bottom-navbar{
+    display: flex;
+    font-size: 12px;
+    color: grey;
+    width: 60%;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.bottom-navbar ul a{
+    text-decoration: none;
+    color: #808080;
+}
+
+.location{
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.location ul a{
+    color: grey;
+}
+
+.dikirim{
+    width: 50%;
+}
+.dikirim p{
+    font-weight: lighter;
+    color: grey;
+    font-size: 11px;
+}
+
+.city-name{
+    width: 50%;
+}
+
+.city-name p{
+    font-weight: bold;
+    font-size: 11px;
+    
+}
+
+/* CONTENT LIST ITEMS */
+.container-content{
+    width: 100%;
+}
+
+.wrapper-content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* gap: 10px; */
+    height: 50px;
+    width: 93%;
+    margin:auto;
+    gap: 10px;
+}
+
+.wrapper-content h3{
+    margin: 20px 10px 20px 30px;
+    text-align: left;
+    font-weight: 15px;
+}
+
+.content{
+    display: flex;
+    /* flex-direction: row; */
+    gap: 10px;
+}
+
+.content1{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    /* border: solid 1px grey; */
+    gap: 5px;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 0.5px lightgray ;
+    margin: 3px 3px 3px 3px;
+}
+
+.content1:hover{
+    transform: scale(1.1);
+}
+
+.content1 img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 95%;
+    height: 90%;
+}
+
+.contenty{
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    /* border: solid 1px grey; */
+    gap: 5px;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 0.5px lightgray ;
+    margin: 3px 3px 3px 3px;
+}
+
+.contenty:hover{
+    transform: scale(1.1);
+}
+
+.content a.contenty{
+    text-decoration: none;
+}
+.detail-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px 2px 2px 8px;
+    text-decoration: none;
+}
+.detail-content p{
+    font-size: 12px;
+    color: #212121;
+    white-space: pre-wrap;
+    word-break: keep-all;
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+
+.detail-content h4{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.detail-content .discount{
+    display: flex;
+    gap: 5px;
+    /* height: 30px; */
+    align-items: center;
+}
+
+.discount p.rate-discount{
+    font-weight: bold;
+    font-size: 10px;
+    color: #f94d63;
+    background-color: #ffdbe2;
+    height: fit-content;
+}
+
+.store-location{
+    display: flex;
+    align-items: left;
+    gap: 5px;
+    width: 100%;
+}
+
+.store-location img{
+    width: 15px;
+    height: 15px;
+}
+
+.store-location p{
+    text-align: center;
+}
+
+.rating{
+    display: flex;
+    gap: 2px;
+}
+
+.rating img{
+    width: 15px;
+    height: 15px;
+}
