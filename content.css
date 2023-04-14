@@ -495,7 +495,8 @@ form{
 }
 
 .promo-app button{
-    width: 25%;
+    width: 28%;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -666,6 +667,7 @@ input.qtyminus {
     gap: 15px;
     border: none;
     justify-content: center;
+    background-color: white;
 }
 
 .whishlist button{
