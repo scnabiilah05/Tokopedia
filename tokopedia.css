@@ -1,11 +1,13 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: inherit;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container-header{
     width: 100%;
+    min-height: 50px;
 }
 
 .wrapper-header{
@@ -51,6 +53,16 @@
     text-decoration: none;
     color: grey;
     font-size: 13px;
+}
+
+.top-header li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.top-header li a{
+    color: #808080;
+    right: 5%;
 }
 
 /* MIDDLE HEADER */
@@ -155,7 +167,7 @@ form{
 }
 
 .button-header{
-    width: 15%;
+    width: 20%;
     gap: 10px;
     display: flex;
     align-items: center;
@@ -266,6 +278,7 @@ form{
 
 .content{
     display: flex;
+    flex-wrap: wrap;
     /* flex-direction: row; */
     gap: 10px;
 }
@@ -294,31 +307,32 @@ form{
     height: 90%;
 }
 
-.contenty{
+/* .contenty{
     display: flex;
     flex-direction: column;
     width: 16%;
-    /* border: solid 1px grey; */
+    border: solid 1px grey;
     gap: 5px;
     transition: transform 0.3s ease;
     border-radius: 15px;
     box-shadow: 1px 1px 1px 0.5px lightgray ;
     margin: 3px 3px 3px 3px;
+    box-sizing: inherit;
 }
 
 .contenty:hover{
     transform: scale(1.1);
-}
+} */
 
-.content a.contenty{
+.content a.content1{
     text-decoration: none;
 }
-.detail-content{
+/* .detail-content{
     display: flex;
     flex-direction: column;
     margin-left: 0px 2px 2px 8px;
     text-decoration: none;
-}
+} */
 .detail-content p{
     font-size: 12px;
     color: #212121;
@@ -326,12 +340,14 @@ form{
     word-break: keep-all;
     margin-bottom: 4px;
     text-decoration: none;
+    box-sizing: inherit;
 }
 
 .detail-content h4{
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 4px;
+    box-sizing: inherit;
 }
 
 .detail-content .discount{
@@ -339,6 +355,7 @@ form{
     gap: 5px;
     /* height: 30px; */
     align-items: center;
+    box-sizing: inherit;
 }
 
 .discount p.rate-discount{
@@ -354,6 +371,7 @@ form{
     align-items: left;
     gap: 5px;
     width: 100%;
+    box-sizing: inherit;
 }
 
 .store-location img{
@@ -368,9 +386,100 @@ form{
 .rating{
     display: flex;
     gap: 2px;
+    box-sizing: inherit;
 }
 
 .rating img{
     width: 15px;
     height: 15px;
+}
+
+@media screen and (max-width: 600px){
+    /* top header */
+    .top-header, .logo-kategori, .bottom-header, .gap-left-bottom, .logo-keranjang{
+        display: none;
+    }
+
+    .box-search{
+        width: 50%;
+    }
+
+    .button-header{
+        width: 15%;
+    }
+    /* content */
+    .detail-content p{
+        font-size: 10px;
+        color: #212121;
+        white-space: pre-wrap;
+        word-break: keep-all;
+        margin-bottom: 2px;
+        text-decoration: none;
+        box-sizing: inherit;
+    }
+    
+    .detail-content h4{
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 2px;
+        box-sizing: inherit;
+    }
+    
+    .detail-content .discount{
+        display: flex;
+        gap: 3px;
+        /* height: 30px; */
+        align-items: center;
+        box-sizing: inherit;
+    }
+    
+    .discount .harga{
+        font-size: 12px;
+    }
+    .discount p.rate-discount{
+        font-weight: bold;
+        font-size: 8px;
+        color: #f94d63;
+        background-color: #ffdbe2;
+        height: fit-content;
+    }
+    
+    .store-location{
+        display: flex;
+        align-items: left;
+        gap: 3px;
+        width: 100%;
+        box-sizing: inherit;
+    }
+    
+    .store-location img{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .store-location p{
+        text-align: center;
+    }
+    
+    .rating{
+        display: flex;
+        gap: 2px;
+        box-sizing: inherit;
+    }
+    
+    .rating img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .contenty{
+        width: 16%;
+        /* border: solid 1px grey; */
+        gap: 5px;
+        transition: transform 0.3s ease;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px 0.5px lightgray ;
+        margin: 3px 3px 3px 3px;
+        box-sizing: inherit;
+    }
 }
